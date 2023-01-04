@@ -1,0 +1,125 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body {
+    height: auto;
+    min-height: 100vh;
+    background: rgb(0,155,230);
+    background: linear-gradient(90deg, rgba(0,155,230,1) 0%, rgba(34,183,126,1) 25%, rgba(82,6,117,1) 75%, rgba(206,5,250,1) 100%);
+}
+input:focus {
+    outline: none;
+    
+}
+#register-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgb(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#register-banner {
+    background: url(/img/pexels-yan-krukau-7793688.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+#banner-layer {
+    background-color: rgba(34, 34, 139, 0.541);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+#banner-layer h1 {
+    color: bisque;
+    font-size: 60px;
+    margin-bottom: 1.5rem;
+    word-spacing: 50rem;
+}
+#register-form {
+    background-color:rgb(246, 236, 224);
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#register-form h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#register-form p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #AAA;
+}
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+
+}
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #AAA;
+    padding: 0.6rem 1px;
+    font-size: 14px;
+    color: #333;
+}
+.form-control input [placeholder] {
+    color: #AAA;
+}
+#generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#generate-password:hover {
+    color: rgb(62, 122, 207);
+}
+#generated-password {
+    border: 1px solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+#generated-password p {
+    color: #81d340;
+    margin-bottom: 1rem;
+}
+#submit {
+    background-color:rgb(77, 0, 144);
+    color: rgb(224, 222, 212);
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    padding: 15px;
+    font-size: 1.2rem;  
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#submit:hover {
+    background-color: rgb(224, 222, 212);
+    color: rgb(77, 0, 144);
+    opacity: 1;
+}
+.hide-generate-password {
+    display: none;
+}
